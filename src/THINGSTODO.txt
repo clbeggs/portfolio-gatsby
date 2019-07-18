@@ -1,0 +1,3 @@
+Change how webpage is display @ width of 1345px 
+
+change github link in project page
