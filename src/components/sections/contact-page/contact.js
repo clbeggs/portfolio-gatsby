@@ -13,6 +13,7 @@ const Title = styled.div`
 const Form = styled.div`
 display:table;
 margin-left:400px;
+margin-top:100px;
 `
 
 const Label = styled.div`
@@ -21,12 +22,12 @@ const Label = styled.div`
 `
 
 const ContactPage = (props) => (
-    <div style={{marginTop:"150px",fontFamily:"Lora"}}>
+    <div style={{marginTop:"150px",fontFamily:"Lora",paddingBottom:"200px"}}>
 
         <Title>Let's get in touch.</Title>
 
         <Form>
-            <form method="post" action="https://formspree.io/beggs240@gmail.com">
+            <form method="post" data-netlify="true">
                 <Label>
                     <label>
 
