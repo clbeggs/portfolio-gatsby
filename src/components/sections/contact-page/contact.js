@@ -27,7 +27,7 @@ const ContactPage = (props) => (
         <Title>Let's get in touch.</Title>
 
         <Form>
-            <form method="post" data-netlify="true">
+            <form name="contact" method="post" data-netlify="true">
                 <Label>
                     <label>
 
