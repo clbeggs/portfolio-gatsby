@@ -4,3 +4,10 @@ change github link in project page
 
 
 https://jsramblings.com/2018/02/04/styled-components-media-queries.html
+
+
+
+rework experience section, say what uou have not what you dont.
+
+add menu bar that takes you to section
+
