@@ -1,3 +1,6 @@
-Change how webpage is display @ width of 1345px 
+Change how webpage is display @ width of 1600px 
 
 change github link in project page
+
+
+https://jsramblings.com/2018/02/04/styled-components-media-queries.html

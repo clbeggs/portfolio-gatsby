@@ -44,7 +44,7 @@ const Introduction = (props,className) => (
            Future Software Engineer 
        </SnippetMe>
        <Difference>
-           Let's make a difference together.
+           Let's Make A Difference Together.
        </Difference>
        
    </Font>

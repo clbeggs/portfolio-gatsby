@@ -67,6 +67,11 @@ const Title = styled.div`
     color:#86A0D3;
     margin-left:80px;
     margin-top:-200px;
+
+    @media only screen and (min-width:1600){
+        text-align:right;
+        color:red;
+    }
 `
 const ProjectPage = (props) => (
     <div style={{fontFamily:"Lora"}}>
