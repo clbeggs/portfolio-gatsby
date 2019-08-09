@@ -47,8 +47,8 @@ const SVG = styled.div`
     display:table;
     position:absolute;
     margin-left:1300px;
-    top:50px;
-    right:70px;
+    top:10px;
+    right:-10px;
 `
 
 

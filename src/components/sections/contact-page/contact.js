@@ -34,7 +34,7 @@ const Coffee = styled.div`
     display:table;
     position:absolute;
     margin-left:1300px;
-    bottom:0px;
+    bottom:-10px;
     right:50px;
     z-index:10;
 `
