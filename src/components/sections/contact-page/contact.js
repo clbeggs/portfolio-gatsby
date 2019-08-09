@@ -23,9 +23,11 @@ const Label = styled.div`
     margin-top:30px;
     margin-bottom:30px;
 `
-const Footer = styled.div`
-    position:relative;
+const Footer = styled.div`  
+    position:absolute;
+    display:table;
     width:100%;
+    bottom:-10px;
 `
 
 const Coffee = styled.div`
@@ -34,6 +36,7 @@ const Coffee = styled.div`
     margin-left:1300px;
     bottom:0px;
     right:50px;
+    z-index:10;
 `
 
 const ContactPage = (props) => (
@@ -71,13 +74,15 @@ const ContactPage = (props) => (
             </form>
         </Form>
 
+        <Coffee>
+            <img className="coffee_time" src={chat} alt="haha"/>
+        </Coffee>
+
         <Footer> 
             <img className="footer-svg" src={footerAccent} alt="haha"/>
         </Footer>
 
-        <Coffee>
-            <img className="coffee_time" src={chat} alt="haha"/>
-        </Coffee>
+        
     </div>
 
 )

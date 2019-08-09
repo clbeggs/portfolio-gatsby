@@ -45,7 +45,7 @@ input[type=text] {
 
   .footer-svg{
     position:absolute;
-    bottom:-200px;
+    bottom:0px;
     right:0;
     width:300%;
   }
