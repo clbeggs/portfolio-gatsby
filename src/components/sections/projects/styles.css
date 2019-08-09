@@ -1,3 +1,25 @@
-.peaky{
-    opacity:1;
+.parent {
+  position: relative;
+}
+
+.child{
+  position: absolute;
+  height:300px;
+  top:600px;
+  left:0;
+  z-index:-10;
+  overflow-x: visible;
+}
+@media only screen and (max-width: 1500px) {
+    .title {
+      margin-top:-100px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1250px){
+    .title {
+        margin-top:0px;
+      } 
+
 }

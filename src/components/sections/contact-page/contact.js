@@ -1,5 +1,8 @@
 import React from "react"
 import styled from "styled-components"
+
+import footerAccent from "../../../images/footer.svg"
+import chat from "../../../images/chatting.svg"
 import "./styles.css"
 
 
@@ -20,9 +23,21 @@ const Label = styled.div`
     margin-top:30px;
     margin-bottom:30px;
 `
+const Footer = styled.div`
+    position:relative;
+    width:100%;
+`
+
+const Coffee = styled.div`
+    display:table;
+    position:absolute;
+    margin-left:1300px;
+    bottom:0px;
+    right:50px;
+`
 
 const ContactPage = (props) => (
-    <div style={{marginTop:"150px",fontFamily:"Lora",paddingBottom:"200px"}}>
+    <div className="parent" style={{ marginTop:"150px",fontFamily:"Lora",paddingBottom:"200px"}}>
 
         <Title>Let's get in touch.</Title>
 
@@ -56,7 +71,13 @@ const ContactPage = (props) => (
             </form>
         </Form>
 
+        <Footer> 
+            <img className="footer-svg" src={footerAccent} alt="haha"/>
+        </Footer>
 
+        <Coffee>
+            <img className="coffee_time" src={chat} alt="haha"/>
+        </Coffee>
     </div>
 
 )

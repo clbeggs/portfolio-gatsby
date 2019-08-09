@@ -73,10 +73,17 @@ const Title = styled.div`
         color:red;
     }
 `
-const ProjectPage = (props) => (
-    <div style={{fontFamily:"Lora"}}>
 
-        <Title>
+const MiddleAccent = styled.div`
+    width:90%;
+    background-color:#5A5A5A;
+    display:table;
+`
+
+const ProjectPage = (props) => (
+    <div className="parent" style={{fontFamily:"Lora", marginTop:"50px", zIndex:"10"}}>
+
+        <Title className="title">
             Personal Projects
         </Title>
 
@@ -183,6 +190,8 @@ const ProjectPage = (props) => (
     
 
     </Container>
+
+    <MiddleAccent className="child"></MiddleAccent>
     </div>
 
 )

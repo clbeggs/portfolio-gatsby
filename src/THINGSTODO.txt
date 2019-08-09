@@ -11,3 +11,4 @@ rework experience section, say what uou have not what you dont.
 
 add menu bar that takes you to section
 
+accent is #5a5a5a

@@ -27,7 +27,7 @@ const ExperienceDescrip = styled.div`
 
 const ExperienceItem = styled.div`
     display:table;
-    margin-left:100px;
+    margin-left:300px;
     margin-top:50px;
 `
 const Container = styled.div`

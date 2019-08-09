@@ -3,7 +3,10 @@ import React from "react"
 import styled from 'styled-components'
 import { FaBookReader } from 'react-icons/fa';
 import { IconContext } from "react-icons";
+import "./education.css"
 
+
+import chalkboard from "../../../images/chalkboard.svg"
 
 const Title = styled.div`
     font-size:4em;
@@ -27,7 +30,7 @@ const EducationDescrip = styled.div`
 
 const EducationItem = styled.div`
     display:table;
-    margin-left:100px;
+    margin-left:300px;
     margin-top:50px;
 `
 
@@ -36,11 +39,19 @@ const Container = styled.div`
     
 `
 
+const Chalkboard = styled.div`
+    display:table;
+    position:absolute;
+    margin-left:1300px;
+    top:0px;
+    right:150px;
+`
+
 
 const Education = (props) => (
 
 
-    <div style={{marginTop:"250px",fontFamily:"Lora"}}>
+    <div className="parent" style={{marginTop:"250px",fontFamily:"Lora"}}>
         <Title>
             Education
         </Title>
@@ -63,7 +74,7 @@ const Education = (props) => (
         </EducationItem>
 
 
-
+        <Chalkboard><img className="chalkboard" src={chalkboard} alt="haha"/></Chalkboard>
     </div>
 )
 

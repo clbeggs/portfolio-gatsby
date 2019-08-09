@@ -1,0 +1,33 @@
+.parent {
+    position:relative;
+}
+
+.secondRowAccent {
+    position:absolute;
+    top:-150px;
+    width:100%;
+}
+.laptop {
+    position:absolute;
+    bottom:-90px;
+    right:0;
+    z-index:10;
+    height:400px;
+}
+
+
+.icon {
+    margin-left:0px;
+}
+
+.inline-react-icons_c1_r1 {
+    
+}
+
+.inline-react-icons_c2_r1 {
+    padding-right:10px;
+}
+
+.inline-react-icons_c3_r1{
+    
+}

@@ -9,11 +9,13 @@ const Background = styled.div`
     z-index:-10;
 `;
 
+
 const Layout = ({ children }) => (
 	<>
 		<Background>
         {children}
         </Background>
+        
 	</>
 )
 
