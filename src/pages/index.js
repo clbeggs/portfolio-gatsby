@@ -38,7 +38,6 @@ const IndexPage = (props) => (
               <ProjectPage></ProjectPage>
 
               <Education></Education>
-              <Experience></Experience>
 
               <Contact></Contact>
             

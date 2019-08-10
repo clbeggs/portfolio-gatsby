@@ -76,7 +76,7 @@ const Skills = (props) => (
 
                         
                         <SectionTitle>
-                            <IconContext.Provider value={{className:'inline-react-icons_c1_r1 icon',size:".9em"}}>
+                            <IconContext.Provider value={{className:'inline-react-icons_c1_r1 icon',color:"#86A0D3", size:".9em"}}>
                                 <FaDesktop/> 
                             </IconContext.Provider>
                             
