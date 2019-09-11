@@ -4,3 +4,51 @@
 .chalkboard {
     height:380px;
 }
+
+@media only screen and (max-width: 1750px) {
+    .chalkboard {
+      height:340px;
+    }
+  }
+
+  @media only screen and (max-width: 1650px) {
+    .chalkboard {
+      height:240px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1550px) {
+    .chalkboard {
+      visibility:hidden;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .educ-descrip {
+      margin-right: 50px;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+      .educ-title{
+        margin-left: -200px;
+      }
+    .educ-descrip {
+      margin-left: -200px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .educ-section-title {
+      font-size:1.6em;
+    }
+  }
+
+  @media only screen and (max-width: 680px) {
+    .educ-section-title {
+      font-size:1.3em;
+    }
+    .educ-descrip {
+        font-size:1.1em;
+    }
+  }

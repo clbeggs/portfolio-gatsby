@@ -55,9 +55,9 @@ const SVG = styled.div`
 const AboutMe = (props) => (
 
 <div className="parent" style={{ marginTop:"50px",fontFamily:"Lora",paddingBottom:"50px"}}> 
-    <Title>About Me</Title>
+    <Title className="about-me-title" >About Me</Title>
     <ColoredContainer>
-        <Bio>
+        <Bio className="bio">
         Hello! My name is <Strong>Chris</Strong>, I am a <Strong>student</Strong> at the University 
         of <br/> Colorado Boulder, studying <Strong>Mathematics</Strong> and <Strong>Computer Science</Strong>.
         <br/><br/>
@@ -69,10 +69,10 @@ const AboutMe = (props) => (
     </ColoredContainer>
 
     <InterestContainer>
-        <ContainerTitle>Things I'm currently interested in.</ContainerTitle>
+        <ContainerTitle className="container-title" >Things I'm currently interested in.</ContainerTitle>
     </InterestContainer>
 
-    <InterestList>
+    <InterestList className="text-size">
         <Strong>Differential Geometry</Strong>: While I'm a ways away from learning about this in the 
         classroom, my <br/> professor  did get me very excited about some of the most <Strong>beautiful</Strong>
          &nbsp;mathematics I've ever seen.

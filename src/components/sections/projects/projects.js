@@ -87,8 +87,8 @@ const ProjectPage = (props) => (
             Personal Projects
         </Title>
 
-        <Container>
-        <GridItem>
+        <Container className="grid">
+        <GridItem className="grid-item-proj">
                 <StyledCluster>
                     <FilterImg>
                         <ProjectText>
@@ -113,7 +113,7 @@ const ProjectPage = (props) => (
                 </StyledCluster>
         </GridItem>
 
-        <GridItem>
+        <GridItem className="grid-item-proj">
             <StyledNeoPixel>
                 <FilterImg>
                     <ProjectText>
@@ -139,7 +139,7 @@ const ProjectPage = (props) => (
         </GridItem>
 
 
-        <GridItem>
+        <GridItem className="grid-item-proj">
             <StyledDesktopCode>
                 <FilterImg>
                     <ProjectText>
@@ -166,7 +166,7 @@ const ProjectPage = (props) => (
             </StyledDesktopCode>
         </GridItem>
 
-        <GridItem>
+        <GridItem className="grid-item-proj">
             <StyledStudents>
                 <FilterImg>
                     <ProjectText>

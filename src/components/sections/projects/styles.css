@@ -23,3 +23,13 @@
       } 
 
 }
+
+
+@media only screen and (max-width:1000px){
+  .grid {
+      grid-template-columns: 100%;
+    } 
+  .grid-item-proj{
+    margin-left:50px;
+  }
+}

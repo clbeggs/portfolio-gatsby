@@ -57,18 +57,19 @@ const Education = (props) => (
         </Title>
 
         <EducationItem>
-        <Container>
+        <Container className=" educ-title">
             <IconContext.Provider value={{ color: "#86A0D3",size:"2em"}}>
                 <FaBookReader></FaBookReader>
             </IconContext.Provider>
         </Container>
+
         <Container>
-            <EducationTitle>
+            <EducationTitle className="educ-section-title">
                     University of Colorado Boulder 
             </EducationTitle>
         </Container>
             
-            <EducationDescrip>
+            <EducationDescrip className="educ-descrip">
                 Currently getting a dual degree in Computer Science and Pure Mathematics
             </EducationDescrip>
         </EducationItem>

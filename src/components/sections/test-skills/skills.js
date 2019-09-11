@@ -61,7 +61,10 @@ const SecondRowAccent = styled.div`
 `
 
 const Laptop = styled.div`
-    dispay:table;
+    display:table;
+`
+const Whitespace = styled.div`
+    border: 1px solid red;
 `
 
 const Skills = (props) => (
@@ -70,12 +73,12 @@ const Skills = (props) => (
         <SkillsBody>
             <Title>Skills</Title>
 
-            <FirstRow className="parent">
+            <FirstRow className="parent first-row">
                 <Container>
-                    <SkillSection>
+                    <SkillSection className="skill-section-ws">
 
                         
-                        <SectionTitle>
+                        <SectionTitle className="section-title" >
                             <IconContext.Provider value={{className:'inline-react-icons_c1_r1 icon',color:"#86A0D3", size:".9em"}}>
                                 <FaDesktop/> 
                             </IconContext.Provider>
@@ -84,42 +87,44 @@ const Skills = (props) => (
                             
                         </SectionTitle>
 
-                        <Writeup>
+                        <Writeup className="writeup">
                         I develop UI/UX with JavaScript, 
                         JQuery, HTML/CSS, React.js, and 
                         Gatsby.js. This website is built using  
                         Gatsby.js!
-
+                        
                         </Writeup>
                     </SkillSection>
-                    <SkillSection>
-                        <SectionTitle>
+                    <SkillSection className="skill-section-ws">
+                        <SectionTitle className="section-title">
                             <IconContext.Provider value={{className:'inline-react-icons_c2_r1 icon', color: "#86A0D3",size:".9em"}}>
                                 <FaServer/> 
                             </IconContext.Provider>
 
                                 Back End
                             </SectionTitle>
-                        <Writeup>
+                        <Writeup className="writeup">
                         Experience with Back Ends using  
                         Postgres SQL 
+                        
                         </Writeup>
                     </SkillSection>
 
-                    <SkillSection>
-                        <SectionTitle>
+                    <SkillSection className="skill-section-ws">
+                        <SectionTitle className="section-title">
                             
                         <IconContext.Provider value={{className:'inline-react-icons_c3_r1 icon', color: "#86A0D3",size:".9em"}}>
                             <FaHeadphones/> 
                         </IconContext.Provider>
 
                             UI/UX Design</SectionTitle>
-                        <Writeup>
+                        <Writeup className="writeup">
                         I work with Adobe XD to create 
                          a blueprint of my websites
                          to make the transition from
                          design to creating as seemless
                         as possible.
+                        
                         </Writeup>
                     </SkillSection>
                 </Container>
@@ -135,48 +140,51 @@ const Skills = (props) => (
                 <img className="secondRowAccent" src={accentTop} alt="haha"/>
             </SecondRowAccent>
                 <Container>
-                    <SkillSection>
-                        <SectionTitle>
+                    <SkillSection className="skill-section-ws">
+                        <SectionTitle className="section-title">
                             
                         <IconContext.Provider value={{className:'inline-react-icons_c1_r2 icon', color: "#86A0D3",size:".9em"}}>
                             <FaNetworkWired/> 
                         </IconContext.Provider>
 
                             Clustering</SectionTitle>
-                        <Writeup>
+                        <Writeup className="writeup">
                             Experience deploying cluster 
                             using Ansible, Kuberentes, and 
                             Vagrant. To see more about this, 
                             check out my Raspberry Pi Cluster 
                             Project below!
+                            
                         </Writeup>
                     </SkillSection>
-                    <SkillSection>
-                        <SectionTitle>
+                    <SkillSection className="skill-section-ws">
+                        <SectionTitle className="section-title">
                             
                             <IconContext.Provider value={{className:'inline-react-icons_c2_r2 icon', color: "#86A0D3",size:".9em"}}>
                                 <FaRegFileCode/> 
                             </IconContext.Provider>
                             
                             Other Skills</SectionTitle>
-                        <Writeup>
+                        <Writeup className="writeup">
                             Python, C++, C, Git, and LateX
+                            
                         </Writeup>
                     </SkillSection>
-                    <SkillSection>
-                        <SectionTitle>
+                    <SkillSection className="skill-section-ws">
+                        <SectionTitle className="section-title">
                             
                             <IconContext.Provider value={{className:'inline-react-icons_c3_r2 icon', color: "#86A0D3",size:".9em"}}>
                                 <FaDivide/> 
                             </IconContext.Provider>
                             
                             Mathematics</SectionTitle>
-                        <Writeup>
+                        <Writeup className="writeup">
                             I am getting a degree in Pure 
                             Mathematics, so I have the advantage 
                             of learning about some of the theories 
                             and applications of Computer Science at a 
                             theoretical level.
+                            
                         </Writeup>
                     </SkillSection>
                 </Container>

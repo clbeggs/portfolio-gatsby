@@ -39,13 +39,18 @@ const Coffee = styled.div`
     z-index:10;
 `
 
+const PersonalEmail = styled.div`
+    color:white;
+    font-size:1.4em;
+`
+
 const ContactPage = (props) => (
     <div className="parent" style={{ marginTop:"150px",fontFamily:"Lora",paddingBottom:"200px"}}>
 
         <Title>Let's get in touch.</Title>
 
         <Form>
-            <form name="contact" method="post" data-netlify="true">
+            <form name="ContactPagePortfolio" method="post" data-netlify="true">
                 <Label>
                     <label>
 
@@ -81,6 +86,10 @@ const ContactPage = (props) => (
         <Footer> 
             <img className="footer-svg" src={footerAccent} alt="haha"/>
         </Footer>
+
+        <PersonalEmail className="pers-email">
+            Or just send me an email at beggs240@gmail.com!
+        </PersonalEmail>
 
         
     </div>
