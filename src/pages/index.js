@@ -27,7 +27,7 @@ const Body = styled.div`
 
 const IndexPage = (props) => (
 
-    <Body style={{overflowX:"hidden"}}>
+    <Body style={{overflowX:"hidden", overflowY:"visible",height:"90%"}}>
         <Layout>      
               <StyledBackgroundSection>
                   <Introduction/>  
