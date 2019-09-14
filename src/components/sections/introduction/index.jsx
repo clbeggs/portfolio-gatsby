@@ -7,7 +7,7 @@ const Font = styled.div`
     color:white;
     border-top:0.1px solid black;
     display:table;
-    border: 1px solid red;
+    height:100%;
 `
 
 const MyName = styled.h1`
@@ -15,7 +15,6 @@ const MyName = styled.h1`
     margin-left:200px;
     margin-top:100px;
     display:table;
-    border: 1px solid red;
 `
 
 
@@ -26,14 +25,12 @@ const SnippetMe = styled.p`
     margin-top: 100px;
     display:table;
     text-align:center;
-    border: 1px solid blue;
 `
 const Difference = styled.p`
     font-size:2em;
     display:table;
     margin-left:200px;
     margin-top:100px;
-    border: 1px solid green;
 `
 
 

@@ -54,7 +54,7 @@ const SVG = styled.div`
 
 const AboutMe = (props) => (
 
-<div className="parent" style={{ marginTop:"50px",fontFamily:"Lora",paddingBottom:"50px"}}> 
+<div className="parent" style={{ height:"100%",marginTop:"50px",fontFamily:"Lora",paddingBottom:"50px"}}> 
     <Title className="about-me-title" >About Me</Title>
     <ColoredContainer>
         <Bio className="bio">
