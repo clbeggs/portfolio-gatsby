@@ -52,11 +52,11 @@ const Education = (props) => (
 
 
     <div className="parent" style={{marginTop:"250px",fontFamily:"Lora"}}>
-        <Title>
+        <Title className="main-title-educ">
             Education
         </Title>
 
-        <EducationItem>
+        <EducationItem className="educ-item-educ">
         <Container className=" educ-title">
             <IconContext.Provider value={{ color: "#86A0D3",size:"2em"}}>
                 <FaBookReader></FaBookReader>

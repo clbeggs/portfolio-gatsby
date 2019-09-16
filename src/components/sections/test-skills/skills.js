@@ -69,9 +69,9 @@ const Whitespace = styled.div`
 
 const Skills = (props) => (
 
-    <div style={{paddingBottom:"40px"}}>
+    <div className="skill-body" style={{paddingBottom:"40px", marginTop:"-5%"}}>
         <SkillsBody>
-            <Title>Skills</Title>
+            <Title className="skills-main-title">Skills</Title>
 
             <FirstRow className="parent first-row">
                 <Container>

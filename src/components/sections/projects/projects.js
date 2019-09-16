@@ -81,7 +81,7 @@ const MiddleAccent = styled.div`
 `
 
 const ProjectPage = (props) => (
-    <div className="parent" style={{fontFamily:"Lora", marginTop:"50px", zIndex:"10"}}>
+    <div className="parent project-main-div" style={{fontFamily:"Lora",zIndex:"10"}}>
 
         <Title className="title">
             Personal Projects
@@ -95,10 +95,10 @@ const ProjectPage = (props) => (
                             <CardTitle ><br/>
                             Raspberry Pi Cluster
                             </CardTitle>
-                            <CardDescription ><br/>
-                                Using Ansible, Kubernetes, and a <br/>
-                                lot of time, I created a 6 node RPi<br/>
-                                 high performance cluster.<br/>
+                            <CardDescription className="card-descrip-proj" ><br/>
+                                Using Ansible, Kubernetes, and a 
+                                lot of time, I created a 6 node RPi
+                                 high performance cluster.
                             </CardDescription>
                             <Icon>
                                 <IconContext.Provider value={{ color: "white",size:"3em"}}>
@@ -122,10 +122,10 @@ const ProjectPage = (props) => (
                             Neopixel Sunrise Alarm Clock
                         </CardTitle>
 
-                        <CardDescription><br/>
-                            Using Arduino and Adafruit Neopixels, <br/>
-                            I created an alarm clock that mimics <br/>
-                            the sunrise to make waking up as <br/>
+                        <CardDescription className="card-descrip-proj" ><br/>
+                            Using Arduino and Adafruit Neopixels, 
+                            I created an alarm clock that mimics 
+                            the sunrise to make waking up as 
                             painless as possible.
                         </CardDescription>
                         <IconContext.Provider value={{ color: "white",size:"3em"}}>
@@ -147,12 +147,12 @@ const ProjectPage = (props) => (
                             <br/>
                             This Portfolio Website!
                         </CardTitle>
-                        <CardDescription>
+                        <CardDescription className="card-descrip-proj" >
                         <br/>
-                            This website was created from scratch <br/>
-                            with Gatsby.js. Before I decided I wanted <br/>
-                            to create my own portfolio, I had no <br/>
-                            experience with front end design. <br/>
+                            This website was created from scratch
+                            with Gatsby.js. Before I decided I wanted
+                            to create my own portfolio, I had no
+                            experience with front end design.
                             my first iterations were made with JQuery
                             and HTML/CSS.
                         </CardDescription>
@@ -174,7 +174,7 @@ const ProjectPage = (props) => (
                             More Coming!
                         </CardTitle>
 
-                        <CardDescription>
+                        <CardDescription className="card-descrip-proj" >
                             <br/>
                             As much as I would love to sink all
                             of my time into my projects, 

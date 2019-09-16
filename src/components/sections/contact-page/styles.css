@@ -91,4 +91,13 @@ input[type=text] {
     .pers-email{
       left:50px;
     }
+    form {
+      margin-left:-360px;
+    }
+    input {
+      width:360px;
+    }
+    textarea {
+      width:360px;
+    }
   }

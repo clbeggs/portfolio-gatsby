@@ -36,6 +36,9 @@
     .educ-descrip {
       margin-left: -200px;
     }
+    .educ-item-educ {
+      margin-left:350px;
+    }
   }
 
   @media only screen and (max-width: 800px) {
@@ -50,5 +53,14 @@
     }
     .educ-descrip {
         font-size:1.1em;
+    }
+    .educ-item-educ {
+      margin-left:230px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .main-title-educ {
+      margin-left:50px
     }
   }

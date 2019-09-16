@@ -15,6 +15,7 @@ import TestPicture from "../components/sections/test-ic/testpicture"
 import "../components/global.css"
 import { useStaticQuery,graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import "./index.css"
 
 
 import Introduction from "../components/sections/introduction/index"
@@ -27,14 +28,32 @@ const Body = styled.div`
   background-color:#1B1B1B;
   margin-left:-10px;
   margin-top:-1%;
+  
+`
+const BackgroundColor = styled.div`
+  width:100%;
+  height:100%;
+  border:5px solid black;
+  background-color:black;
+  position:absolute; 
+  top:0;
 `
 const Base = (props) =>(
-    <Body style={{overflowX:"hidden", overflowY:"visible",height:"90%"}}>
-    <Layout>      
-          <StyledBackgroundSection>
-              <Introduction/>  
-              
-          </StyledBackgroundSection>
+    <Body className="parent"  style={{overflowX:"hidden", overflowY:"visible",height:"90%",position:"relative"}}>
+    <Layout className="parent" style={{zIndex:"-10",position:"relative"}}> 
+    <Introduction className="parent" style={{zIndex:"9999",border:"10px solid red",position:"relative"}} ></Introduction>     
+            <BackgroundColor>
+            <Img
+            fluid={props.data.imageOne.childImageSharp.fluid}
+            imgStyle={{ objectFit: 'cover' }}
+            className="background-image"
+            style={{ overflowY:"hidden",position:"absolute", top:"0",height: '100vh' ,width:"110%",marginLeft:"0%",zIndex:"1"}}
+            alt="This is a picture of my face."
+            ></Img>
+            </BackgroundColor>
+            
+          
+          
           <AboutMe></AboutMe>
           <Skills></Skills> 
           <ProjectPage></ProjectPage>
@@ -42,10 +61,7 @@ const Base = (props) =>(
           <Education></Education>
 
           <Contact></Contact>
-          <Img
-    fluid={props.data.imageOne.childImageSharp.fluid}
-  alt="This is a picture of my face."
-        />
+          
     </Layout>
 
     
@@ -55,7 +71,7 @@ export default Base;
 
 export const query = graphql`
    query {
-  	imageOne:file(relativePath:{eq: "self-faded.jpg"}) {
+  	imageOne:file(relativePath:{eq: "MeUnchanged.JPG"}) {
       childImageSharp {
         fluid(maxWidth:1000){
             ...GatsbyImageSharpFluid

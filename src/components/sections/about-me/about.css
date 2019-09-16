@@ -7,32 +7,67 @@
 
 
 
-@media only screen and (max-width: 1700px) {
-    .desk_work {
-      height:300px;
-      margin-top:100px;
-    }
-    .text-size{
-      margin-right:100px;
+@media only screen and (max-width: 1300px) {
+  .desk_work {
+    height:400px;
+    margin-top:150px;
+  }
+  .colored-container {
+    width:65%
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .desk_work {
+    height:250px;
+    margin-top:250px;
+  }
+  .colored-container {
+    width:75%
+  }
+  .container-title {
+    margin-left:50px;
+  }
+  .interest-list-container{
+    margin-left:80px;
+  }
+}
 
-    }
+@media only screen and (max-width: 900px) {
+  .desk_work {
+    visibility: hidden;
+  }
+  .colored-container {
+    width:85%
   }
 
 
-@media only screen and (max-width: 1400px) {
-    .desk_work {
-      visibility:hidden;
-    }
+}
+
+@media only screen and (max-width: 850px) {
+
+  .colored-container {
+    width:90%
   }
 
-  @media only screen and (max-width: 900px) {
-    .text-size{
-      font-size: 1.3em;
-    }
-    .container-title {
-      font-size: 1.7em;
-    }
-    .bio {
-      font-size: .8em;
-    }
+  .container-title {
+    margin-left:25px;
   }
+  .interest-list-container{
+    margin-left:40px;
+    width:80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .bio{
+    font-size: .9em;
+  }
+  .container-title {
+    margin-left:10px;
+  }
+  .interest-list-container{
+    margin-left:15px;
+    width:90%
+  }
+}
