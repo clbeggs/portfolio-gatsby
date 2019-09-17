@@ -101,3 +101,20 @@ input[type=text] {
       width:360px;
     }
   }
+
+
+
+  @media only screen and (max-width: 450px) {
+    .pers-email{
+      left:10px;
+    }
+    form {
+      margin-left:-390px;
+    }
+    input {
+      width:300px;
+    }
+    textarea {
+      width:300px;
+    }
+  }

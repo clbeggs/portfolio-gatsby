@@ -87,11 +87,11 @@
 
   @media only screen and (max-width: 450px) {
     .writeup {
-        width:90%;
+        width:70vw;
         margin-left:0px;
     }
     .skill-section-ws {
-        margin-left:-20px;
+        margin-left:-40px;
     }
     .skills-main-title {
         margin-left:180px;

@@ -102,7 +102,7 @@ const ProjectPage = (props) => (
                             </CardDescription>
                             <Icon>
                                 <IconContext.Provider value={{ color: "white",size:"3em"}}>
-                                    <a style={{width:"100%", height:"100%", outline:"none"}} href="https://www.google.com/">
+                                    <a style={{width:"100%", height:"100%", outline:"none"}} className="skills-icon" href="https://www.google.com/">
                                     <FaGithub/> 
                                     </a>
                                 </IconContext.Provider>
@@ -129,7 +129,7 @@ const ProjectPage = (props) => (
                             painless as possible.
                         </CardDescription>
                         <IconContext.Provider value={{ color: "white",size:"3em"}}>
-                            <a style={{width:"100%", height:"100%", outline:"none"}} href="https://www.google.com/">
+                            <a style={{width:"100%", height:"100%", outline:"none"}} className="skills-icon" href="https://www.google.com/">
                                 <FaGithub/> 
                             </a>
                         </IconContext.Provider>
@@ -157,7 +157,7 @@ const ProjectPage = (props) => (
                             and HTML/CSS.
                         </CardDescription>
                         <IconContext.Provider value={{ color: "white",size:"3em"}}>
-                            <a style={{width:"100%", height:"100%", outline:"none"}} href="https://www.google.com/">
+                            <a style={{width:"100%", height:"100%", outline:"none"}} className="skills-icon" href="https://www.google.com/">
                                 <FaGithub/> 
                             </a>
                         </IconContext.Provider>
