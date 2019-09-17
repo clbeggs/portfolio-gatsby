@@ -71,3 +71,21 @@
     width:90%
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .colored-container {
+    width:95%
+  }
+
+  .bio{
+    font-size: .9em;
+    padding-left:10px;
+  }
+  .container-title {
+    margin-left:0px;
+  }
+  .interest-list-container{
+    margin-left:5px;
+    width:95%
+  }
+}
