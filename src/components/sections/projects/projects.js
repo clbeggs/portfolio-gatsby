@@ -96,13 +96,13 @@ const ProjectPage = (props) => (
                             Raspberry Pi Cluster
                             </CardTitle>
                             <CardDescription className="card-descrip-proj" ><br/>
-                                Using Ansible, Kubernetes, and a 
-                                lot of time, I created a 6 node RPi
+                                Using Ansible, Kubernetes, Docker, and a 
+                                lot of time, I am building a 6 node RPi
                                  high performance cluster.
                             </CardDescription>
                             <Icon>
                                 <IconContext.Provider value={{ color: "white",size:"3em"}}>
-                                    <a style={{width:"100%", height:"100%", outline:"none"}} className="skills-icon" href="https://www.google.com/">
+                                    <a style={{width:"100%", height:"100%", outline:"none"}} className="skills-icon" href="https://github.com/clbeggs/ansibleCluster">
                                     <FaGithub/> 
                                     </a>
                                 </IconContext.Provider>
@@ -134,7 +134,7 @@ const ProjectPage = (props) => (
                             and HTML/CSS.
                         </CardDescription>
                         <IconContext.Provider value={{ color: "white",size:"3em"}}>
-                            <a style={{width:"100%", height:"100%", outline:"none"}} className="skills-icon" href="https://www.google.com/">
+                            <a style={{width:"100%", height:"100%", outline:"none"}} className="skills-icon" href="https://github.com/clbeggs/portfolio-gatsby">
                                 <FaGithub/> 
                             </a>
                         </IconContext.Provider>

@@ -151,7 +151,7 @@ const Skills = (props) => (
                         <Writeup className="writeup">
                             Experience deploying cluster 
                             using Ansible, Kuberentes, and 
-                            Vagrant. To see more about this, 
+                            Docker. To see more about this, 
                             check out my Raspberry Pi Cluster 
                             Project below!
                             
