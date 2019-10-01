@@ -1,73 +1,74 @@
+import "./about.css"
 import React from "react"
 import styled from 'styled-components'
-import "./about.css"
+
 import desk_work from "../../../images/desk_work.svg"
 
 const Title = styled.div`
-    font-size:4em;
-    color:#86A0D3;
-    margin-left:80px;
-    margin-top:50px;
+    font-size:4em ;
+    color:#86A0D3 ;
+    margin-left:80px ;
+    margin-top:50px ;
     
     
 `
 const ColoredContainer = styled.div`
-    background-color:#5A5A5A;
-    color:white;
-    font-size:1.7em;
-    display:table;
-    margin-top:50px;
-    width:55%;
+    background-color:#5A5A5A ;
+    color:white ;
+    font-size:1.7em ;
+    display:table ;
+    margin-top:50px ;
+    width:55% ;
     
     
 `
 
 const Strong = styled.div`
-    color:#86A0D3;
-    display:inline;
-    font-size:1em;
-    font-weight:bold;
+    color:#86A0D3 ;
+    display:inline ;
+    font-size:1em ;
+    font-weight:bold ;
 `
 const Bio = styled.div`
-    padding: 30px 40px 40px 10%;
+    padding: 30px 40px 40px 10% ;
     
     
 `
 
 const InterestContainer = styled.div`
-    margin-top:60px;
+    margin-top:60px ;
     
     
 `
 const ContainerTitle = styled.div`
-    color:white;
-    font-size:2.3em;
-    margin-left:100px;
+    color:white ;
+    font-size:2.3em ;
+    margin-left:100px ;
     
     
 `
 
 const InterestList = styled.div`
-    font-size:1.7em;
-    color:white;
-    display:table;
-    margin-left:150px;
-    margin-top:40px;
-    width:50%;
+    font-size:1.7em ;
+    color:white ;
+    display:table ;
+    margin-left:150px ;
+    margin-top:40px ;
+    width:50% ;
     
 `
 const SVG = styled.div`
-    display:table;
-    position:absolute;
-    margin-left:1300px;
-    top:10px;
-    right:-10px;
+    display:table ;
+    position:absolute ;
+    margin-left:1300px ;
+    top:10px ;
+    right:-10px ;
 `
 
 
 const AboutMe = (props) => (
 
-<div className="parent" style={{height:"100%",marginTop:"50px",fontFamily:"Lora",paddingBottom:"5%",display:"table"}}> 
+<div className="parent about-me-parent" > 
     <Title className="about-me-title" >About Me</Title>
     <ColoredContainer className="colored-container">
         <Bio className="bio">

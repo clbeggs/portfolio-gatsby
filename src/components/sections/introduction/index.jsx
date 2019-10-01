@@ -1,6 +1,7 @@
+import "./intro.css"
 import React from "react"
 import styled from 'styled-components';
-import "./intro.css"
+
 
 const Font = styled.div`
     font-family:Lora;

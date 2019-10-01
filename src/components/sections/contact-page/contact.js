@@ -1,9 +1,10 @@
+import "./styles.css"
 import React from "react"
 import styled from "styled-components"
 
 import footerAccent from "../../../images/footer.svg"
 import chat from "../../../images/chatting.svg"
-import "./styles.css"
+
 
 
 
@@ -45,7 +46,7 @@ const PersonalEmail = styled.div`
 `
 
 const ContactPage = (props) => (
-    <div className="parent" style={{ marginTop:"150px",fontFamily:"Lora",paddingBottom:"200px"}}>
+    <div className="parent contact-parent" >
 
         <Title>Let's get in touch.</Title>
 

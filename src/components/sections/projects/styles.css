@@ -3,6 +3,8 @@
 }
 .project-main-div {
   margin-top:50px;
+  font-family:Lora;
+  z-index:10;
 }
 .child{
   position: absolute;

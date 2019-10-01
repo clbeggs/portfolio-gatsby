@@ -7,6 +7,11 @@
   bottom:100px;
   left:100px;
 }
+.contact-parent{
+  margin-top:150px;
+  font-family: Lora;
+  padding-bottom: 200px;
+}
 
 .coffee_time {
   height:500px;

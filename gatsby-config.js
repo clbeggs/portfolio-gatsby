@@ -17,8 +17,8 @@ module.exports = {
     `gatsby-plugin-web-font-loader`,
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-styled-components`,
- 
+    `gatsby-plugin-styled-components`,  
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -43,8 +43,10 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+        
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

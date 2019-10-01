@@ -1,7 +1,10 @@
 .parent {
     position:relative;
 }
-
+.skill-parent{
+    padding-bottom:40px;
+    margin-top:-5%;
+}
 .secondRowAccent {
     position:absolute;
     top:-150px;

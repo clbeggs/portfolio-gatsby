@@ -1,9 +1,9 @@
-
+import "./skills.css"
 import React from "react"
 import styled from "styled-components"
 import { FaServer, FaDesktop, FaHeadphones, FaDivide, FaNetworkWired, FaRegFileCode } from 'react-icons/fa';
 import { IconContext } from "react-icons";
-import "./skills.css"
+
 import accentTop from "../../../images/accent.svg"
 import laptop from "../../../images/laptop.svg"
 
@@ -69,7 +69,7 @@ const Whitespace = styled.div`
 
 const Skills = (props) => (
 
-    <div className="skill-body" style={{paddingBottom:"40px", marginTop:"-5%"}}>
+    <div className="skill-body skill-parent">
         <SkillsBody>
             <Title className="skills-main-title">Skills</Title>
 

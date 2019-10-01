@@ -81,7 +81,7 @@ const MiddleAccent = styled.div`
 `
 
 const ProjectPage = (props) => (
-    <div className="parent project-main-div" style={{fontFamily:"Lora",zIndex:"10"}}>
+    <div className="parent project-main-div">
 
         <Title className="title">
             Personal Projects
@@ -112,31 +112,8 @@ const ProjectPage = (props) => (
                     </FilterImg>
                 </StyledCluster>
         </GridItem>
+        
 
-        <GridItem className="grid-item-proj">
-            <StyledNeoPixel>
-                <FilterImg>
-                    <ProjectText>
-                        <CardTitle>
-                            <br/>
-                            Neopixel Sunrise Alarm Clock
-                        </CardTitle>
-
-                        <CardDescription className="card-descrip-proj" ><br/>
-                            Using Arduino and Adafruit Neopixels, 
-                            I created an alarm clock that mimics 
-                            the sunrise to make waking up as 
-                            painless as possible.
-                        </CardDescription>
-                        <IconContext.Provider value={{ color: "white",size:"3em"}}>
-                            <a style={{width:"100%", height:"100%", outline:"none"}} className="skills-icon" href="https://www.google.com/">
-                                <FaGithub/> 
-                            </a>
-                        </IconContext.Provider>
-                    </ProjectText>
-                </FilterImg>
-            </StyledNeoPixel>
-        </GridItem>
 
 
         <GridItem className="grid-item-proj">

@@ -1,9 +1,9 @@
-
+import "./education.css"
 import React from "react"
 import styled from 'styled-components'
 import { FaBookReader } from 'react-icons/fa';
 import { IconContext } from "react-icons";
-import "./education.css"
+
 
 
 import chalkboard from "../../../images/chalkboard.svg"
@@ -51,7 +51,7 @@ const Chalkboard = styled.div`
 const Education = (props) => (
 
 
-    <div className="parent" style={{marginTop:"250px",fontFamily:"Lora"}}>
+    <div className="parent education-parent">
         <Title className="main-title-educ">
             Education
         </Title>

@@ -1,43 +1,50 @@
 .desk_work {
-    height:500px;
+    height:500px ;
 }
 .parent {
-    position:relative;
+    position:relative ;
+}
+.about-me-parent {
+  height:100%;
+  margin-top:50px;
+  font-family:Lora;
+  padding-bottom:5%;
+  display:table;
 }
 
 
 
 @media only screen and (max-width: 1300px) {
   .desk_work {
-    height:400px;
-    margin-top:150px;
+    height:400px ;
+    margin-top:150px ;
   }
   .colored-container {
-    width:65%
+    width:65% ;
   }
 }
 @media only screen and (max-width: 1200px) {
   .desk_work {
-    height:250px;
-    margin-top:250px;
+    height:250px ; 
+    margin-top:250px ;
   }
   .colored-container {
-    width:75%
+    width:75% ;
   }
   .container-title {
-    margin-left:50px;
+    margin-left:50px ;
   }
   .interest-list-container{
-    margin-left:80px;
+    margin-left:80px ;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .desk_work {
-    visibility: hidden;
+    visibility: hidden ;
   }
   .colored-container {
-    width:85%
+    width:85% ;
   }
 
 
@@ -46,46 +53,46 @@
 @media only screen and (max-width: 850px) {
 
   .colored-container {
-    width:90%
+    width:90% ;
   }
 
   .container-title {
-    margin-left:25px;
+    margin-left:25px ;
   }
   .interest-list-container{
-    margin-left:40px;
-    width:80%;
+    margin-left:40px ;
+    width:80% ;
   }
 }
 
 @media only screen and (max-width: 700px) {
 
   .bio{
-    font-size: .9em;
+    font-size: .9em ;
   }
   .container-title {
-    margin-left:10px;
+    margin-left:10px ;
   }
   .interest-list-container{
-    margin-left:15px;
-    width:90%
+    margin-left:15px ;
+    width:90% ;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .colored-container {
-    width:95vw;
+    width:95vw ;
   }
 
   .bio{
-    font-size: .9em;
-    padding-left:10px;
+    font-size: .9em ;
+    padding-left:10px ;
   }
   .container-title {
-    margin-left:0px;
+    margin-left:0px ;
   }
   .interest-list-container{
-    margin-left:5px;
-    width:95vw;
+    margin-left:5px ;
+    width:95vw ;
   }
 }
