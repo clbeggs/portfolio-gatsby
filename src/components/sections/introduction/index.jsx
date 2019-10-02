@@ -10,8 +10,6 @@ const Font = styled.div`
     display:table;
     height:100%;
     z-index:100;
-    
-    
 `
 
 const MyName = styled.h1`
