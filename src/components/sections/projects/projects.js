@@ -144,6 +144,31 @@ const ProjectPage = (props) => (
         </GridItem>
 
         <GridItem className="grid-item-proj">
+            
+                <FilterImg>
+                    <ProjectText>
+                        <CardTitle> <br/>
+                            Gmail Reminder Extension    
+                        </CardTitle>
+
+                        <CardDescription className="card-descrip-proj" >
+                            <br/>
+                            This one is a small project. I sent out a bunch of emails
+                            to potential employeers and didn't attach my resume.. And I ended
+                            each one with "Attached below is my resume". So, I wrote a small
+                            script that has a little popup asking if you attached the files you 
+                            said you would when you are writing a new email.
+                        </CardDescription>
+
+                    </ProjectText>
+                </FilterImg>
+            
+        </GridItem>
+
+
+
+
+        <GridItem className="grid-item-proj">
             <StyledStudents>
                 <FilterImg>
                     <ProjectText>
