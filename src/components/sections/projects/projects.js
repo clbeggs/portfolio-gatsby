@@ -96,9 +96,9 @@ const ProjectPage = (props) => (
                             Raspberry Pi Cluster
                             </CardTitle>
                             <CardDescription className="card-descrip-proj" ><br/>
-                                Using Ansible, Kubernetes, Docker, and a 
-                                lot of time, I am building a 6 node RPi
-                                 high performance cluster.
+                                I am in the process of building a 6 node Raspberry Pi based Kubernetes 
+                                cluster, deployed using Ansible and Docker. Read more about it below in 
+                                the projects section! 
                             </CardDescription>
                             <Icon>
                                 <IconContext.Provider value={{ color: "white",size:"3em"}}>
