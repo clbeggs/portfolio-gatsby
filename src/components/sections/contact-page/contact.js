@@ -44,17 +44,36 @@ const PersonalEmail = styled.div`
     font-size:1.4em;
 `
 
+
+
+handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...this.state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch(error => alert(error))
+  }
+
+  
+
 const ContactPage = (props) => (
     <div className="parent contact-parent" >
 
         <Title>Let's get in touch.</Title>
 
         <Form>
-            <form name="ContactPagePortfolio" method="POST" data-netlify="true" >
+            <form name="ContactPagePortfolio" method="POST" data-netlify="true"  action="/success/success" onSubmit={this.handleSubmit} >
                 <Label>
                     <label>
 
-                        <input type="text" name="name" id="name" placeholder="Name.."/>
+                        <input type="text" name="nameSubmit" id="nameSubit" placeholder="Name.."/>
                         <br/>
                     </label>
                 </Label>
