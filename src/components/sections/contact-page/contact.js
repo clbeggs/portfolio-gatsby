@@ -27,7 +27,6 @@ const Label = styled.div`
 const Footer = styled.div`  
     position:absolute;
     display:table;
-    width:100%;
     bottom:-10px;
 `
 
