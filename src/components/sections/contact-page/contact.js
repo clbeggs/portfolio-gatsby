@@ -1,6 +1,7 @@
 import "./styles.css"
 import React from "react"
 import styled from "styled-components"
+import { navigate } from 'gatsby-link'
 
 import footerAccent from "../../../images/footer.svg"
 import chat from "../../../images/chatting.svg"
