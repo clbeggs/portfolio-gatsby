@@ -1,6 +1,7 @@
 import "./about.css"
 import React from "react"
 import styled from 'styled-components'
+import { useMediaQuery } from 'react-responsive'
 
 import desk_work from "../../../images/desk_work.svg"
 

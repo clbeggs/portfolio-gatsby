@@ -28,6 +28,7 @@ const Body = styled.div`
   background-color:#1B1B1B;
   margin-left:-10px;
   margin-top:-1%;
+  -webkit-overflow-scrolling: touch;
   
 `
 
@@ -37,11 +38,12 @@ const stickyMessage = styled.div`
 const BackgroundColor = styled.div`
   width:100%;
   height:100%;
-  border:5px solid black;
-  background-color:black;
+  background-color:#1b1b1b;
   position:absolute; 
   top:0;
 `
+
+
 const Base = (props) =>(
     <Body className="parent"  style={{overflowX:"hidden", overflowY:"visible",height:"90%",position:"relative"}}>
           <stickyMessage className="stickyChild" style={{zIndex:"999"}}>Issue's with formatting? Check out the GitHub README.md</stickyMessage>

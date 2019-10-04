@@ -17,7 +17,8 @@ module.exports = {
     `gatsby-plugin-web-font-loader`,
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-styled-components`,  
+    `gatsby-plugin-styled-components`,
+    
 
     {
       resolve: `gatsby-plugin-manifest`,
