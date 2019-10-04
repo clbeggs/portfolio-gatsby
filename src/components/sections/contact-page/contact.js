@@ -46,6 +46,22 @@ const PersonalEmail = styled.div`
 
 
 
+function encode(data) {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&')
+  }
+  
+  export default class Index extends React.Component {
+    constructor(props) {
+      super(props)
+      this.state = { isValidated: false }
+    }
+  
+    handleChange = e => {
+      this.setState({ [e.target.name]: e.target.value })
+    }
+  
 handleSubmit = e => {
     e.preventDefault()
     const form = e.target
@@ -61,57 +77,60 @@ handleSubmit = e => {
       .catch(error => alert(error))
   }
 
-  
 
-const ContactPage = (props) => (
-    <div className="parent contact-parent" >
 
-        <Title>Let's get in touch.</Title>
+  render() {
+      return(
+<div className="parent contact-parent" >
 
-        <Form>
-            <form name="ContactPagePortfolio" method="POST" data-netlify="true"  action="/success/success" onSubmit={this.handleSubmit} >
-                <Label>
-                    <label>
+<Title>Let's get in touch.</Title>
 
-                        <input type="text" name="nameSubmit" id="nameSubit" placeholder="Name.."/>
-                        <br/>
-                    </label>
-                </Label>
+<Form>
+    <form name="ContactPagePortfolio" method="POST" data-netlify="true"  action="/success/success" onSubmit={this.handleSubmit} >
+        <Label>
+            <label>
 
-                <Label>
-                    <label>
+                <input type="text" name="nameSubmit" id="nameSubit" placeholder="Name.." onChange={this.handleChange} />
+                <br/>
+            </label>
+        </Label>
 
-                       <input type="email" name="email" id="email" placeholder="Email.."/>
-                       <br/>
-                    </label>
-                </Label>
+        <Label>
+            <label>
 
-                <Label>
-                    <label>
+               <input type="email" name="email" id="email" placeholder="Email.." onChange={this.handleChange} />
+               <br/>
+            </label>
+        </Label>
 
-                       <textarea name="message" id="message" rows="5" placeholder="Message..."/>
-                       <br/>
-                    </label>
-                </Label>
-                
-                <button type="submit">Send</button>
-            </form>
-        </Form>
+        <Label>
+            <label>
 
-        <Coffee>
-            <img className="coffee_time" src={chat} alt="haha"/>
-        </Coffee>
-
-        <Footer> 
-            <img className="footer-svg" src={footerAccent} alt="haha"/>
-        </Footer>
-
-        <PersonalEmail className="pers-email">
-            Or just send me an email at beggs240@gmail.com!
-        </PersonalEmail>
-
+               <textarea name="message" id="message" rows="5" placeholder="Message..." onChange={this.handleChange} />
+               <br/>
+            </label>
+        </Label>
         
-    </div>
+        <button type="submit">Send</button>
+    </form>
+</Form>
 
-)
-export default ContactPage
+<Coffee>
+    <img className="coffee_time" src={chat} alt="haha"/>
+</Coffee>
+
+<Footer> 
+    <img className="footer-svg" src={footerAccent} alt="haha"/>
+</Footer>
+
+<PersonalEmail className="pers-email">
+    Or just send me an email at beggs240@gmail.com!
+</PersonalEmail>
+
+
+</div>
+  
+      )
+  }
+
+}
