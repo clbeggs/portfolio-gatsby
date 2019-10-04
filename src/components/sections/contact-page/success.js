@@ -22,9 +22,7 @@ const SucContainer = styled.div`
 
 
 
-
-
-const SuccessPage = (props) => (
+export default () => (
 
     <NewBackground >
         <SucContainer>
@@ -34,6 +32,5 @@ const SuccessPage = (props) => (
         </SucContainer>
 
     </NewBackground>
-)
+  )
 
-export default SuccessPage

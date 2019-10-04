@@ -45,53 +45,21 @@ const PersonalEmail = styled.div`
     font-size:1.4em;
 `
 
+const Contact = (props) => (
 
-
-function encode(data) {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-      .join('&')
-  }
-  
-  export default class Index extends React.Component {
-    constructor(props) {
-      super(props)
-      this.state = { isValidated: false }
-    }
-  
-    handleChange = e => {
-      this.setState({ [e.target.name]: e.target.value })
-    }
-  
-handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error))
-  }
-
-
-
-  render() {
-      return(
 <div className="parent contact-parent" >
 
 <Title>Let's get in touch.</Title>
 
 <Form>
-    <form name="ContactPagePortfolio" method="POST" data-netlify="true"  action="/success/success" onSubmit={this.handleSubmit} >
+    <form name="ContactPagePortfolio" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" >
+    <input type="hidden" name="bot-field" />
+    <input type="hidden" name="form-name" value="contact" />
+
         <Label>
             <label>
 
-                <input type="text" name="nameSubmit" id="nameSubit" placeholder="Name.." onChange={this.handleChange} />
+                <input type="text" name="nameSubmit" id="nameSubit" placeholder="Name.." />
                 <br/>
             </label>
         </Label>
@@ -99,7 +67,7 @@ handleSubmit = e => {
         <Label>
             <label>
 
-               <input type="email" name="email" id="email" placeholder="Email.." onChange={this.handleChange} />
+               <input type="email" name="email" id="email" placeholder="Email.." />
                <br/>
             </label>
         </Label>
@@ -107,7 +75,7 @@ handleSubmit = e => {
         <Label>
             <label>
 
-               <textarea name="message" id="message" rows="5" placeholder="Message..." onChange={this.handleChange} />
+               <textarea name="message" id="message" rows="5" placeholder="Message..." />
                <br/>
             </label>
         </Label>
@@ -130,8 +98,6 @@ handleSubmit = e => {
 
 
 </div>
-  
-      )
-  }
 
-}
+)
+export default Contact
