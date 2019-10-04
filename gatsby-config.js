@@ -18,7 +18,14 @@ module.exports = {
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
-    
+    `gatsby-plugin-robots-txt`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options:{
+        host:'https://chris-beggs.netlify.com/',
+        policy:[{ userAgent: '*', allow: '/' }]
+      }
+    },
 
     {
       resolve: `gatsby-plugin-manifest`,
