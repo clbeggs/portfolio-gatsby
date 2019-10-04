@@ -50,7 +50,7 @@ const ContactPage = (props) => (
         <Title>Let's get in touch.</Title>
 
         <Form>
-            <form name="ContactPagePortfolio" method="post" data-netlify="true">
+            <form name="ContactPagePortfolio" method="POST" data-netlify="true" >
                 <Label>
                     <label>
 
