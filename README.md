@@ -7,6 +7,11 @@
   My Personal Portfolio created with Gatsby's default starter
 </h1>
 
+<div float="left">
+  <img src="./src/images/desktop-apps.png" width="49%" alt="Photo Credit: Makenna Bortells" />
+  <img src="./src/images/vscode-gatsby.png" width="49%" alt="Photo Credit: Makenna Bortells" />
+</div>
+
 Starting with a boilerplate provided by Gatsby.js, I built a portfolio!
 
 Note: There are differences with the development and production build, so after ~900px width the formatting starts to get messed up. For the best experience, view the website on a laptop or desktop! 
