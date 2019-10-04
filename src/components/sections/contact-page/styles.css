@@ -17,8 +17,9 @@
   height:500px;
 }
 input {
-    width:600px;
+    width:36vw;
     height:40px;
+    z-index:1000;
 }
 label {
     color:white;
@@ -30,7 +31,7 @@ label {
 input[type=text] {
     border: 2px solid #86A0D3;
     border-radius: 4px;
-    
+    z-index:1000;
   }
 
   input[type=email] {
@@ -40,8 +41,9 @@ input[type=text] {
   textarea {
     border: 2px solid #86A0D3;
     border-radius: 4px;
-    width:600px;
+    width:36vw;
     height:100px;
+    z-index:1000;
   }
 
   form {
@@ -57,8 +59,9 @@ input[type=text] {
     position:absolute;
     bottom:0px;
     right:0;
-    width:300%;
   }
+/*
+
 
 
 
@@ -123,3 +126,4 @@ input[type=text] {
       width:300px;
     }
   }
+*/
