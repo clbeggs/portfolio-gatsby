@@ -17,7 +17,7 @@ const Title = styled.div`
 `
 const Form = styled.div`
     display:table;
-    margin-left:400px;
+    margin-left:15vw;
     margin-top:100px;
 `
 
@@ -43,6 +43,8 @@ const Coffee = styled.div`
 const PersonalEmail = styled.div`
     color:white;
     font-size:1.4em;
+    margin-left:5vw;
+    margin-top:5vh;
 `
 
 
@@ -89,9 +91,6 @@ const Contact = (props) => (
     <img style={{display:"table",width:"30vw"}} className="coffee_time" src={chat} alt="haha"/>
 </Coffee>
 
-<Footer> 
-    <img  className="footer-svg" src={footerAccent} alt="haha"/>
-</Footer>
 
 <PersonalEmail className="pers-email">
     Or just send me an email at beggs240@gmail.com!
