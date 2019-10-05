@@ -1,6 +1,6 @@
-import "./intro.css"
 import React from "react"
 import styled from 'styled-components';
+import "./intro.css"
 
 
 const Font = styled.div`
@@ -10,24 +10,42 @@ const Font = styled.div`
     display:table;
     height:100%;
     z-index:100;
+    @media (max-width:800px){
+        width:100%;
+    }
 `
 
 const MyName = styled.h1`
     font-size:4vw;
     margin-top:9vh;
+    @media (max-width:800px){
+        font-size:3em;
+        margin-top:1vh;
+    }
 `
 
 const SnippetMe = styled.p`
     font-size:3vw;
     margin-top: 9vh;
+    @media (max-width:800px){
+        font-size:2em;
+        margin-top:0vh;
+    }
 `
 const Difference = styled.p`
     font-size:2vw;
     margin-top:9vh;
+    @media (max-width:800px){
+        font-size:1em;
+        margin-top:2vh;
+    }
 `
 const OpaqueBackground = styled.div`
     background-color:rgb(27,27,27,.7);  
     display:table;
+    @media (max-width:800px){
+        width:100%;
+    }
 `
 
 const FontContainer = styled.div`

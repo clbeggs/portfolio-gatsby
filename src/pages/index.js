@@ -46,8 +46,6 @@ const BackgroundColor = styled.div`
 
 const Base = (props) =>(
     <Body className="parent"  style={{overflowX:"hidden", overflowY:"visible",height:"90%",position:"relative"}}>
-          <stickyMessage className="stickyChild" style={{zIndex:"999"}}>Issue's with formatting? Check out the GitHub README.md</stickyMessage>
-
     <Layout className="parent" style={{zIndex:"-10",position:"relative"}}> 
 
     <Introduction className="parent" style={{zIndex:"9999",border:"10px solid red",position:"relative"}} ></Introduction>     

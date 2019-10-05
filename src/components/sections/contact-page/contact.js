@@ -1,9 +1,6 @@
 import "./styles.css"
 import React from "react"
 import styled from "styled-components"
-import { navigate } from 'gatsby-link'
-
-import footerAccent from "../../../images/footer.svg"
 import chat from "../../../images/chatting.svg"
 
 
@@ -28,6 +25,16 @@ const Form = styled.div`
             width: 70vw;
         }
     }
+
+    @media (max-width: 800px) {
+        margin-left:3vw;
+        input {
+            width: 90vw;
+        }
+        textarea {
+            width: 90vw;
+        }
+    }
 `
 
 const Label = styled.div`
@@ -49,6 +56,9 @@ const Coffee = styled.div`
     z-index:10;
     @media (max-width: 900px){
         right:0vw;
+    }
+    @media (max-width: 700px){
+        display:none;
     }
 `
 
