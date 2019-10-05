@@ -5,11 +5,6 @@ import styled from 'styled-components'
 import StyledCluster from "../../background/cluster"
 import StyledDesktopCode from "../../background/code"
 import StyledStudents from "../../background/students"
-import StyledNeoPixel from "../../background/neopixel"
-import Math from "../../../images/math.svg"
-
-
-import MathBlue from "../../../images/math_blue.svg" //How You import svg!!
 
 import { FaGithub } from 'react-icons/fa';
 import { IconContext } from "react-icons";
@@ -25,11 +20,22 @@ const Container = styled.div`
     width:950px;
     margin-left:auto;
     margin-right:auto;
+    @media (max-width: 1000px) {
+        grid-template-columns:100%;
+    }
 `
 
 const GridItem = styled.div`
     width: 400px;
     height: 400px;
+    @media (max-width: 1000px) {
+        width:60vw;
+        margin-left:5vw;
+    }
+    @media (max-width: 800px) {
+        width:90vw;
+        margin-left:5vw;
+    }
 `
 
 const FilterImg = styled.div`
@@ -37,6 +43,7 @@ const FilterImg = styled.div`
     opacity:.92;
     width:100%;
     height:105%;
+
 `
 const ProjectText = styled.div`
     text-align:center;
@@ -57,10 +64,6 @@ const Icon = styled.div`
  margin-top:45px;
 `
 
-const IconLink = styled.a`
-    width:100%;
-    height:100%;
-`
 
 const Title = styled.div`
     font-size:4em;
@@ -68,10 +71,6 @@ const Title = styled.div`
     margin-left:80px;
     margin-top:-200px;
 
-    @media only screen and (min-width:1600){
-        text-align:right;
-        color:red;
-    }
 `
 
 const MiddleAccent = styled.div`
@@ -79,6 +78,8 @@ const MiddleAccent = styled.div`
     background-color:#5A5A5A;
     display:table;
 `
+
+
 
 const ProjectPage = (props) => (
     <div className="parent project-main-div">

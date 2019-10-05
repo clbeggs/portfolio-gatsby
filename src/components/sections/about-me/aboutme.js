@@ -19,7 +19,17 @@ const ColoredContainer = styled.div`
     font-size:1.7em ;
     display:table ;
     margin-top:50px ;
-    width:55% ;
+    width:55%;
+    @media (max-width:1280px){
+        width:70vw;
+    }
+    @media (max-width: 900px){
+        width:90vw;
+    }
+    @media (max-width: 800px){
+        width:95vw;
+        font-size:1.3em;
+    }
     
     
 `
@@ -29,10 +39,10 @@ const Strong = styled.div`
     display:inline ;
     font-size:1em ;
     font-weight:bold ;
+    
 `
 const Bio = styled.div`
-    padding: 30px 40px 40px 10% ;
-    
+    padding: 30px 40px 40px 10% ;    
     
 `
 
@@ -45,6 +55,9 @@ const ContainerTitle = styled.div`
     color:white ;
     font-size:2.3em ;
     margin-left:100px ;
+    @media (max-width: 800px){
+        margin-left:3vw;
+    }
     
     
 `
@@ -53,9 +66,22 @@ const InterestList = styled.div`
     font-size:1.7em ;
     color:white ;
     display:table ;
-    margin-left:150px ;
+    margin-left:20vw;
     margin-top:40px ;
     width:50% ;
+    
+    @media (max-width:1280px){
+        width:70vw;
+        padding-right:12vw;
+    }
+    @media (max-width: 900px){
+        width:70vw;
+    }
+    @media (max-width: 800px){
+        width:85vw;
+        font-size: 1.6em;
+        margin-left:5vw;
+    }
     
 `
 const SVG = styled.div`
@@ -64,12 +90,23 @@ const SVG = styled.div`
     margin-left:1300px ;
     top:10px ;
     right:-10px ;
-`
 
+    @media (max-width:1280px){
+        margin-left:0px
+    }
+    @media (max-width: 900px){
+        display:none;
+    }
+    
+`
+const AboutBody = styled.div`
+    padding-bottom:5%;
+    display:table;
+`
 
 const AboutMe = (props) => (
 
-<div className="parent about-me-parent" > 
+<AboutBody style={{paddingBottom:"5%"}}className="parent about-me-parent" > 
     <Title className="about-me-title" >About Me</Title>
     <ColoredContainer className="colored-container">
         <Bio className="bio">
@@ -96,8 +133,8 @@ const AboutMe = (props) => (
         <Strong>Deep Learning</Strong>: I think every CS student has a fascination with the subject,
         and reading more about applicable technolgies today only excites me more!
     </InterestList>
-    <SVG><img className="desk_work" src={desk_work} alt="haha"/></SVG>
-</div>
+    <SVG><img style={{width:"40vw", marginTop:"5vh"}} className="desk_work" src={desk_work} alt="haha"/></SVG>
+</AboutBody>
 
 
   

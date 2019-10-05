@@ -16,16 +16,29 @@ const SkillsBody = styled.div`
 
 
 const Title = styled.div`
-    font-size:4em;
+    font-size:3.5vw;
     color:#86A0D3;
     margin-left:80px;
     margin-top:50px;
+    @media (max-width: 900px) {
+        font-size:7vw;
+    }
+    @media (max-width: 800px) {
+        font-size:4em;
+    }
 `
 const SectionTitle = styled.div`
-    font-size:2.3em;
+    font-size:2.3vw;
     color:#86A0D3;
     font-weight:bold;
     dispay:table;
+    @media (max-width: 900px) {
+        font-size:5vw;
+    }
+    @media (max-width: 800px) {
+        font-size:2em;
+    }
+    
 `
 
 const SkillSection = styled.div`
@@ -35,9 +48,16 @@ const SkillSection = styled.div`
 `   
 
 const Writeup = styled.div`
-    font-size:1.6em;
+    font-size:1.6vw;
     color:white;
-    width:430px;
+    width:24vw;
+    @media (max-width: 900px) {
+        width:70vw;
+        font-size:3.5vw;
+    }
+    @media (max-width: 800px) {
+        font-size:1.2em;
+    }
 `
 const FirstRow = styled.div`
     width: 100%;
@@ -62,14 +82,22 @@ const SecondRowAccent = styled.div`
 
 const Laptop = styled.div`
     display:table;
+    @media (max-width: 900px) {
+        display:none;
+    }
 `
 const Whitespace = styled.div`
     border: 1px solid red;
 `
+const SkillsMainBody = styled.div`
+    @media (max-width: 900px){
+        margin-top:-5%;
+    }
+`
 
 const Skills = (props) => (
 
-    <div className="skill-body skill-parent">
+    <SkillsMainBody className="skill-body skill-parent">
         <SkillsBody>
             <Title className="skills-main-title">Skills</Title>
 
@@ -129,16 +157,19 @@ const Skills = (props) => (
                     </SkillSection>
                 </Container>
                 <Laptop>
-                    <img className="laptop" src={laptop} alt="haha"/>
+                    <img style={{width:"20vw",right:"2vw", bottom:"-3vh"}} className="laptop" src={laptop} alt="haha"/>
                 </Laptop>
             </FirstRow>
 
             
 
             <SecondRow className="parent">
+
             <SecondRowAccent>
                 <img className="secondRowAccent" src={accentTop} alt="haha"/>
             </SecondRowAccent>
+
+
                 <Container>
                     <SkillSection className="skill-section-ws">
                         <SectionTitle className="section-title">
@@ -191,7 +222,7 @@ const Skills = (props) => (
             </SecondRow>
 
         </SkillsBody>
-    </div>
+    </SkillsMainBody>
 )
 
 

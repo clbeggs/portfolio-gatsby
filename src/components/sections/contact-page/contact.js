@@ -19,6 +19,15 @@ const Form = styled.div`
     display:table;
     margin-left:15vw;
     margin-top:100px;
+
+    @media (max-width: 900px) {
+        input {
+            width: 70vw;
+        }
+        textarea {
+            width: 70vw;
+        }
+    }
 `
 
 const Label = styled.div`
@@ -36,8 +45,11 @@ const Coffee = styled.div`
     position:absolute;
     margin-left:1300px;
     bottom:-10px;
-    right:50px;
+    right:5vw;
     z-index:10;
+    @media (max-width: 900px){
+        right:0vw;
+    }
 `
 
 const PersonalEmail = styled.div`

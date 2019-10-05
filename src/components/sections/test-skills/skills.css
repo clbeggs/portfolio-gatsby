@@ -3,7 +3,6 @@
 }
 .skill-parent{
     padding-bottom:40px;
-    margin-top:-5%;
 }
 .secondRowAccent {
     position:absolute;
@@ -12,10 +11,7 @@
 }
 .laptop {
     position:absolute;
-    bottom:-90px;
-    right:0;
     z-index:10;
-    height:400px;
 }
 
 
@@ -29,27 +25,13 @@
     .secondRowAccent {
         top:-140px;
     }
-    .laptop {
-        height:350px;
-    }
+
 
   }
 @media only screen and (max-width: 1650px) {
     .secondRowAccent {
         top:-130px;
-    }
-    .section-title{
-        font-size:1.6em;
-     }
-     .writeup {
-        font-size:1.3em;
-        width:350px;
-     }
-     .laptop{
-         visibility:hidden;
-     }
-
-     
+    } 
   }
 
   @media only screen and (max-width: 1550px) {
@@ -66,37 +48,18 @@
 
 }
 
-@media only screen and (max-width: 1350px){
-    
-}
+
   @media only screen and (max-width: 1250px) {
     .secondRowAccent {
         top:-95px;
     }
-    .skill-section-ws {
-        width:100%;
-    }
+
     
   }
   @media only screen and (max-width: 1150px) {
     .secondRowAccent {
         visibility:hidden;
     }
-    .first-row{
-        margin-bottom:-100px;
-    }
-    
-  }
 
-  @media only screen and (max-width: 450px) {
-    .writeup {
-        width:70vw;
-        margin-left:0px;
-    }
-    .skill-section-ws {
-        margin-left:-40px;
-    }
-    .skills-main-title {
-        margin-left:180px;
-    }
+    
   }
