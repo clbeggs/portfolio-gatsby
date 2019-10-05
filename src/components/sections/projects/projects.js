@@ -44,6 +44,10 @@ const FilterImg = styled.div`
     width:100%;
     height:105%;
 
+    @media (max-width: 900px){
+        opacity:1;
+    }
+
 `
 const ProjectText = styled.div`
     text-align:center;
@@ -58,6 +62,9 @@ const CardTitle = styled.h3`
 const CardDescription = styled.p`
     opacity:1;
     font-size:1.3em;
+    @media ( max-width:900px ){
+        padding: 0 20px 0 20px;
+    }
 `
 
 const Icon = styled.div`
@@ -78,7 +85,15 @@ const MiddleAccent = styled.div`
     background-color:#5A5A5A;
     display:table;
 `
-
+const ClusterPic = styled(StyledCluster)`
+    
+`
+const StudentPic = styled(StyledStudents)`
+    
+`
+const DesktopPic = styled(StyledDesktopCode)`
+    
+`
 
 
 const ProjectPage = (props) => (
@@ -90,7 +105,7 @@ const ProjectPage = (props) => (
 
         <Container className="grid">
         <GridItem className="grid-item-proj">
-                <StyledCluster>
+                <ClusterPic>
                     <FilterImg>
                         <ProjectText>
                             <CardTitle ><br/>
@@ -111,14 +126,14 @@ const ProjectPage = (props) => (
                         </ProjectText>
                         
                     </FilterImg>
-                </StyledCluster>
+                </ClusterPic>
         </GridItem>
         
 
 
 
         <GridItem className="grid-item-proj">
-            <StyledDesktopCode>
+            <DesktopPic>
                 <FilterImg>
                     <ProjectText>
                         <CardTitle>
@@ -141,7 +156,7 @@ const ProjectPage = (props) => (
                         </IconContext.Provider>
                     </ProjectText>
                 </FilterImg>
-            </StyledDesktopCode>
+            </DesktopPic>
         </GridItem>
 
         <GridItem className="grid-item-proj">
@@ -170,7 +185,7 @@ const ProjectPage = (props) => (
 
 
         <GridItem className="grid-item-proj">
-            <StyledStudents>
+            <StudentPic>
                 <FilterImg>
                     <ProjectText>
                         <CardTitle> <br/>
@@ -188,7 +203,7 @@ const ProjectPage = (props) => (
 
                     </ProjectText>
                 </FilterImg>
-            </StyledStudents>
+            </StudentPic>
         </GridItem>
     
 
