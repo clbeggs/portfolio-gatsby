@@ -16,9 +16,9 @@ const Title = styled.div`
     margin-top:50px;
 `
 const Form = styled.div`
-display:table;
-margin-left:400px;
-margin-top:100px;
+    display:table;
+    margin-left:400px;
+    margin-top:100px;
 `
 
 const Label = styled.div`
@@ -44,6 +44,7 @@ const PersonalEmail = styled.div`
     color:white;
     font-size:1.4em;
 `
+
 
 const Contact = (props) => (
 
@@ -85,11 +86,11 @@ const Contact = (props) => (
 </Form>
 
 <Coffee>
-    <img className="coffee_time" src={chat} alt="haha"/>
+    <img style={{display:"table",width:"30vw"}} className="coffee_time" src={chat} alt="haha"/>
 </Coffee>
 
 <Footer> 
-    <img className="footer-svg" src={footerAccent} alt="haha"/>
+    <img  className="footer-svg" src={footerAccent} alt="haha"/>
 </Footer>
 
 <PersonalEmail className="pers-email">
