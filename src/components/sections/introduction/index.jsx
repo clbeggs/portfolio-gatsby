@@ -19,7 +19,7 @@ const MyName = styled.h1`
     font-size:4vw;
     margin-top:9vh;
     @media (max-width:800px){
-        font-size:3em;
+        font-size:2.5em;
         margin-top:1vh;
     }
 `
@@ -28,7 +28,7 @@ const SnippetMe = styled.p`
     font-size:3vw;
     margin-top: 9vh;
     @media (max-width:800px){
-        font-size:2em;
+        font-size:1.5em;
         margin-top:0vh;
     }
 `
