@@ -10,7 +10,9 @@ const Title = styled.div`
     color:#86A0D3 ;
     margin-left:80px ;
     margin-top:50px ;
-    
+    @media (max-width: 500px){
+        margin-left:10px;
+    }
     
 `
 const ColoredContainer = styled.div`
@@ -91,8 +93,9 @@ const SVG = styled.div`
     top:10px ;
     right:-10px ;
 
-    @media (max-width:1280px){
-        margin-left:0px
+    @media (max-width:1285px){
+        margin-left:-300px;
+        width:400px;
     }
     @media (max-width: 900px){
         display:none;

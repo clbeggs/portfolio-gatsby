@@ -77,7 +77,10 @@ const Title = styled.div`
     color:#86A0D3;
     margin-left:80px;
     margin-top:-200px;
-
+    @media (max-width: 500px){
+        margin-left:10px;
+    }
+    
 `
 
 const MiddleAccent = styled.div`

@@ -26,6 +26,10 @@ const Title = styled.div`
     @media (max-width: 800px) {
         font-size:4em;
     }
+    @media (max-width: 500px){
+        margin-left:10px;
+    }
+    
 `
 const SectionTitle = styled.div`
     font-size:2.3vw;
