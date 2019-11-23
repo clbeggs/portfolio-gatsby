@@ -116,7 +116,8 @@ const ProjectPage = (props) => (
                             </CardTitle>
                             <CardDescription className="card-descrip-proj" ><br/>
                                 I am in the process of building a 6 node Raspberry Pi based Kubernetes 
-                                cluster, deployed using Ansible and Docker. Read more about it below in 
+                                cluster, deployed using Ansible and Docker. I'm working through Kubernetes 
+                                Up & Running by Kelsey Hightower. Read more about it below in 
                                 the projects section! 
                             </CardDescription>
                             <Icon>
@@ -188,25 +189,22 @@ const ProjectPage = (props) => (
 
 
         <GridItem className="grid-item-proj">
-            <StudentPic>
                 <FilterImg>
                     <ProjectText>
                         <CardTitle> <br/>
-                            More Coming!
+                            Robots with ROS
                         </CardTitle>
 
                         <CardDescription className="card-descrip-proj" >
                             <br/>
-                            As much as I would love to sink all
-                            of my time into my projects, 
-                            I am a full time student with a 
-                            part time job, and those responsibilites come
-                            first!
+                            I've started working through Programming
+                            Robots with ROS by Quigley, Gerkey, and Smart.
+                            I've started to get interested in robots ever since my 
+                            algorithms instructor introduced me to ROS.
                         </CardDescription>
 
                     </ProjectText>
                 </FilterImg>
-            </StudentPic>
         </GridItem>
     
 
