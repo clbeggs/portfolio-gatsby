@@ -1,0 +1,2 @@
+Allow ability to look at Resume and CV
+Create menu/directory w/ animation
