@@ -3,7 +3,9 @@ module.exports = {
     title: `Chris Beggs Portfolio`,
     description: `Learn a little about a CS/Math Student in Boulder!`,
     author: `@clbeggs`,
-    siteUrl: 'https://chris-beggs.netlify.com/'
+    siteUrl: 'https://chris-beggs.netlify.com/',
+    image: './src/images/MeUnchanged.JPG',
+    
   },
   plugins: [
     {

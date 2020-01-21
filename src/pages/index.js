@@ -45,6 +45,7 @@ const BackgroundColor = styled.div`
 
 
 const Base = (props) =>(
+
     <Body className="parent"  style={{overflowX:"hidden", overflowY:"visible",height:"90%",position:"relative"}}>
     <Layout className="parent" style={{zIndex:"-10",position:"relative"}}> 
 
