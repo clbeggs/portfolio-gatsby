@@ -16,6 +16,7 @@ import "../components/global.css"
 import { useStaticQuery,graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import "./index.css"
+import Helmet from "react-helmet"
 
 
 import Introduction from "../components/sections/introduction/index"
@@ -47,6 +48,26 @@ const BackgroundColor = styled.div`
 const Base = (props) =>(
 
     <Body className="parent"  style={{overflowX:"hidden", overflowY:"visible",height:"90%",position:"relative"}}>
+      <Helmet>
+        <title>Chris Beggs | Comp Sci | Personal Portfolio</title>
+        <title>Chris Beggs | Comp Sci | Personal Portfolio</title>
+        <meta name="title" content="Chris Beggs | Comp Sci | Personal Portfolio"/>
+        <meta name="description" content="Chris Beggs - Personal Portfolio, Built using Gatsby.js"/>
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://metatags.io/"/>
+        <meta property="og:title" content="Chris Beggs | Comp Sci | Personal Portfolio"/>
+        <meta property="og:description" content="Chris Beggs - Personal Portfolio, Built using Gatsby.js"/>
+        <meta property="og:image" content="./src/images/MeUnchanged.JPG"/>
+
+        
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="https://metatags.io/"/>
+        <meta property="twitter:title" content="Chris Beggs | Comp Sci | Personal Portfolio"/>
+        <meta property="twitter:description" content="Chris Beggs - Personal Portfolio, Built using Gatsby.js"/>
+        <meta property="twitter:image" content="./src/images/MeUnchanged.JPG"/>
+
+      </Helmet>
     <Layout className="parent" style={{zIndex:"-10",position:"relative"}}> 
 
     <Introduction className="parent" style={{zIndex:"9999",border:"10px solid red",position:"relative"}} ></Introduction>     

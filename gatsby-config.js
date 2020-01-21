@@ -5,7 +5,7 @@ module.exports = {
     author: `@clbeggs`,
     siteUrl: 'https://chris-beggs.netlify.com/',
     image: './src/images/MeUnchanged.JPG',
-    
+
   },
   plugins: [
     {
@@ -17,6 +17,7 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-web-font-loader`,
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
