@@ -49,7 +49,7 @@ const Base = (props) =>(
 
     <Body className="parent"  style={{overflowX:"hidden", overflowY:"visible",height:"90%",position:"relative"}}>
       <Helmet>
-        
+
         <title>Chris Beggs | Comp Sci | Personal Portfolio</title>
         <meta name="title" content="Chris Beggs | Comp Sci | Personal Portfolio"/>
         <meta name="description" content="Chris Beggs - Personal Portfolio, Built using Gatsby.js"/>
@@ -58,14 +58,14 @@ const Base = (props) =>(
         <meta property="og:url" content="https://metatags.io/"/>
         <meta property="og:title" content="Chris Beggs | Comp Sci | Personal Portfolio"/>
         <meta property="og:description" content="Chris Beggs - Personal Portfolio, Built using Gatsby.js"/>
-        <meta property="og:image" content="./src/images/MeUnchanged.JPG"/>
+        <meta property="og:image" content="../images/MeUnchanged.JPG"/>
 
         
         <meta property="twitter:card" content="summary_large_image"/>
         <meta property="twitter:url" content="https://metatags.io/"/>
         <meta property="twitter:title" content="Chris Beggs | Comp Sci | Personal Portfolio"/>
         <meta property="twitter:description" content="Chris Beggs - Personal Portfolio, Built using Gatsby.js"/>
-        <meta property="twitter:image" content="./src/images/MeUnchanged.JPG"/>
+        <meta property="twitter:image" content="../images/MeUnchanged.JPG"/>
 
       </Helmet>
 
