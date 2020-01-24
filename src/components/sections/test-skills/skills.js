@@ -32,7 +32,7 @@ const Title = styled.div`
     
 `
 const SectionTitle = styled.div`
-    font-size:2.3vw;
+    font-size:1.7vw;
     color:#86A0D3;
     font-weight:bold;
     dispay:table;
@@ -52,7 +52,7 @@ const SkillSection = styled.div`
 `   
 
 const Writeup = styled.div`
-    font-size:1.6vw;
+    font-size:1.3vw;
     color:white;
     width:24vw;
     @media (max-width: 900px) {
@@ -99,6 +99,19 @@ const SkillsMainBody = styled.div`
     }
 `
 
+const Tools = styled.div`
+    width: 100%;
+    color:#86A0D3;
+    font-size:1.1vw;
+`
+
+const ToolTitle = styled.div`
+    float: left;
+    color:white;
+    font-size:1.1vw;
+    font-weight:bold;
+`
+
 const Skills = (props) => (
 
     <SkillsMainBody className="skill-body skill-parent">
@@ -117,13 +130,14 @@ const Skills = (props) => (
                             
                             Front End
                             
-                        </SectionTitle>
-
+                        </SectionTitle>     
+               
                         <Writeup className="writeup">
-                        I develop UI/UX with JavaScript, 
-                        JQuery, HTML/CSS, React.js, and 
-                        Gatsby.js. This website is built using  
-                        Gatsby.js!
+                        <Tools>
+                            <strong >Tools:</strong>  JavaScript, Gatsby.js, React, <br/>
+                            HTML/CSS, JQuery
+                        </Tools>
+                        I like to build intuitive and minimalist UI's, and bring code to life in the browser.
                         
                         </Writeup>
                     </SkillSection>
@@ -136,8 +150,12 @@ const Skills = (props) => (
                                 Back End
                             </SectionTitle>
                         <Writeup className="writeup">
-                        Experience with Back Ends using  
-                        Postgres SQL 
+                        <Tools>
+                            <strong >Tools:</strong>  PostgreSQL, MySQL
+                        </Tools>
+
+                            I have taken two courses regarding database design and analysis
+                            ,writing queries and traversing databases using PostgreSQL 
                         
                         </Writeup>
                     </SkillSection>
@@ -151,6 +169,9 @@ const Skills = (props) => (
 
                             UI/UX Design</SectionTitle>
                         <Writeup className="writeup">
+                        <Tools>
+                            <strong >Tools:</strong>  AdobeXD
+                        </Tools>
                         I work with Adobe XD to create 
                          a blueprint of my websites
                          to make the transition from
@@ -182,11 +203,15 @@ const Skills = (props) => (
                             <FaNetworkWired/> 
                         </IconContext.Provider>
 
-                            Clustering</SectionTitle>
+                            Containerization</SectionTitle>
                         <Writeup className="writeup">
-                            Experience deploying cluster 
-                            using Ansible, Kuberentes, and 
-                            Docker. To see more about this, 
+                        <Tools>
+                            <strong >Tools:</strong>  Kubernetes, Docker, Ansible
+                        </Tools>
+                            Experience deploying a bare metal cluster 
+                            using Ansible and Kubernetes, and working throught a 
+                            LinkedIn Learning course about k8s.
+                            To see more about this, 
                             check out my Raspberry Pi Cluster 
                             Project below!
                             
@@ -199,9 +224,13 @@ const Skills = (props) => (
                                 <FaRegFileCode/> 
                             </IconContext.Provider>
                             
-                            Other Skills</SectionTitle>
+                            Software Development</SectionTitle>
                         <Writeup className="writeup">
-                            Python, C++, C, Git, and LateX
+                        <Tools>
+                            <strong >Tools:</strong>  Python, C++, C, Git
+                        </Tools>
+                            When I have to write performance based code, I use C++, but I like to fall back on Python for other things. 
+                            
                             
                         </Writeup>
                     </SkillSection>
@@ -214,6 +243,9 @@ const Skills = (props) => (
                             
                             Mathematics</SectionTitle>
                         <Writeup className="writeup">
+                        <Tools>
+                            <strong >Tools:</strong>  Linear Algebra, Calculus, Discrete Math
+                        </Tools>
                             I am getting a degree in Pure 
                             Mathematics, so I have the advantage 
                             of learning about some of the theories 

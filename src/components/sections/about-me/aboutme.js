@@ -132,8 +132,8 @@ const AboutMe = (props) => (
          &nbsp;mathematics I've ever seen.
 
         <br/><br/>
-        <Strong>Deep Learning</Strong>: I think every CS student has a fascination with the subject,
-        and reading more about applicable technolgies today only excites me more!
+        <Strong>Digital Signal Processing</Strong>: Having recently taken a MOOC about Computer Networks, I have developed an interest in 
+        signals and signal processing. 
     </InterestList>
     <SVG><img style={{width:"40vw", marginTop:"5vh"}} className="desk_work" src={desk_work} alt="haha"/></SVG>
 </AboutBody>
